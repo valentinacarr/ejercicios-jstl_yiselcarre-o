@@ -1,0 +1,25 @@
+<%-- Se incluye con include DESPUES de declarar los taglib y de definir ${titulo} --%>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><c:out value="${titulo}" /> | JSTL 2026</title>
+  <script src="<c:url value='/v2026/js/tema.js'/>"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<c:url value='/v2026/css/estilo.css'/>">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar bg-body-tertiary border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="<c:url value='/v2026/index.jsp'/>">Ejercicios JSTL</a>
+    <div class="d-flex gap-2">
+      <a class="btn btn-outline-secondary btn-sm" href="<c:url value='/v2026/index.jsp'/>">Inicio</a>
+      <button type="button" class="btn btn-outline-secondary btn-sm" id="btn-tema"
+              aria-label="Cambiar entre tema claro y oscuro">Tema claro/oscuro</button>
+              
+    </div>
+    <a class="btn btn-outline-secondary btn-sm" href="<c:url value='/index.jsp'/>">&larr; Portada</a>
+  </div>
+</nav>
+<main class="container flex-grow-1 py-4">

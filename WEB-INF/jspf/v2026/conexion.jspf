@@ -1,0 +1,14 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<%-- Conexion a MySQL. En Clever Cloud toma los datos de las variables MYSQL_ADDON_* (se enlazan con --link).
+     En tu PC, si esas variables no existen, usa localhost / root / sin clave. --%>
+<c:set var="dbHost" value="${not empty System.getenv('MYSQL_ADDON_HOST') ? System.getenv('MYSQL_ADDON_HOST') : 'localhost'}" />
+<c:set var="dbPort" value="${not empty System.getenv('MYSQL_ADDON_PORT') ? System.getenv('MYSQL_ADDON_PORT') : '3306'}" />
+<c:set var="dbName" value="${not empty System.getenv('MYSQL_ADDON_DB') ? System.getenv('MYSQL_ADDON_DB') : 'empleados'}" />
+<c:set var="dbUser" value="${not empty System.getenv('MYSQL_ADDON_USER') ? System.getenv('MYSQL_ADDON_USER') : 'root'}" />
+<c:set var="dbPass" value="${not empty System.getenv('MYSQL_ADDON_PASSWORD') ? System.getenv('MYSQL_ADDON_PASSWORD') : ''}" />
+<sql:setDataSource var="empleados"
+    driver="com.mysql.cj.jdbc.Driver"
+    url="jdbc:mysql://${dbHost}:${dbPort}/${dbName}?allowPublicKeyRetrieval=true&useSSL=false"
+    user="${dbUser}"
+    password="${dbPass}" />

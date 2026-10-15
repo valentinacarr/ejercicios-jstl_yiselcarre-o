@@ -1,0 +1,29 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="titulo" value="Ejercicio 8 - SQL" />
+<%@ include file="/WEB-INF/jspf/v2006/cabecera.jspf" %>
+
+<h2>Ejercicio 8: base de datos con las etiquetas sql</h2>
+<p>Antes de empezar ejecuta <code>sql/empleados.sql</code> y revisa la conexi&oacute;n en <code>WEB-INF/jspf/conexion.jspf</code>.</p>
+
+<c:if test="${not empty param.error}">
+  <div class="error"><c:out value="${param.error}" /></div>
+</c:if>
+
+<form action="procesar.jsp" method="post">
+  <table class="datos">
+    <tr><th width="40%"><label for="nombres">Ingrese su nombre</label></th>
+        <td><input class="texto" type="text" name="nombres" id="nombres" maxlength="50" /></td></tr>
+    <tr><th><label for="apellido1">Ingrese su primer apellido</label></th>
+        <td><input class="texto" type="text" name="apellido1" id="apellido1" maxlength="50" /></td></tr>
+    <tr><th><label for="apellido2">Ingrese su segundo apellido</label></th>
+        <td><input class="texto" type="text" name="apellido2" id="apellido2" maxlength="50" /></td></tr>
+    <tr><th><label for="edad">Ingrese su edad</label></th>
+        <td><input class="texto" type="text" name="edad" id="edad" maxlength="3" /></td></tr>
+    <tr><td colspan="2" align="center">
+        <input class="boton" type="submit" value="Enviar" />
+        &nbsp;&nbsp;<a href="listado.jsp">Ver empleados</a></td></tr>
+  </table>
+</form>
+<p><a href="<c:url value='/v2006/index.jsp'/>">Volver</a></p>
+<%@ include file="/WEB-INF/jspf/v2006/pie.jspf" %>

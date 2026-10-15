@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "app_id": "app_308a0051-7d76-474d-b792-d72bf130d56b",
+      "org_id": "user_de4fcf3b-c66a-44ec-9391-193b2f8bf6b4",
+      "deploy_url": "https://push-n3-par-clevercloud-customers.services.clever-cloud.com/app_308a0051-7d76-474d-b792-d72bf130d56b.git",
+      "git_ssh_url": "git+ssh://git@push-n3-par-clevercloud-customers.services.clever-cloud.com/app_308a0051-7d76-474d-b792-d72bf130d56b.git",
+      "name": "jstl-ejerciciosyiselcarreno",
+      "alias": "jstl"
+    }
+  ]
+}

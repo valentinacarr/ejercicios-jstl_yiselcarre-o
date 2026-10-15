@@ -1,0 +1,22 @@
+/* Estilo "de 2006": ancho fijo de 760px (pantallas de 1024x768), tablas, sin frameworks ni CSS3 */
+body { margin:0; padding:0; background:#E8EEF4; font:12px Verdana, Arial, Helvetica, sans-serif; color:#222222; }
+#contenedor { width:760px; margin:0 auto; background:#FFFFFF; border-left:1px solid #99AABB; border-right:1px solid #99AABB; }
+#cabecera { background:#1F3F66; color:#FFFFFF; padding:12px 20px; border-bottom:4px solid #CC0000; }
+#cabecera h1 { margin:0; font-size:22px; }
+#cabecera span { font-size:10px; color:#BFD0E6; }
+#menu { background:#DDE6F0; padding:5px 20px; border-bottom:1px solid #99AABB; }
+#menu a { color:#1F3F66; font-weight:bold; text-decoration:none; margin-right:15px; }
+#menu a:hover { text-decoration:underline; }
+#contenido { padding:15px 20px; min-height:320px; }
+#pie { background:#1F3F66; color:#FFFFFF; text-align:center; padding:8px; font-size:10px; }
+h2 { font-size:16px; color:#1F3F66; border-bottom:1px solid #99AABB; padding-bottom:3px; }
+h3 { font-size:13px; color:#1F3F66; }
+table.datos { border-collapse:collapse; width:100%; margin:10px 0; }
+table.datos th, table.datos td { border:1px solid #99AABB; padding:4px 8px; text-align:left; }
+table.datos th { background:#DDE6F0; }
+.error { background:#FFE0E0; border:1px solid #CC0000; color:#990000; padding:6px 10px; margin:10px 0; }
+.ok { background:#E0FFE0; border:1px solid #009900; color:#006600; padding:6px 10px; margin:10px 0; }
+.info { background:#E0F0FF; border:1px solid #3366AA; color:#113366; padding:6px 10px; margin:10px 0; }
+.nota { font-size:11px; color:#555555; border-left:3px solid #CC0000; padding-left:8px; margin:10px 0; }
+input.texto, select { width:250px; padding:2px; border:1px solid #778899; }
+input.boton { padding:2px 12px; background:#1F3F66; color:#FFFFFF; border:1px solid #000000; cursor:pointer; }

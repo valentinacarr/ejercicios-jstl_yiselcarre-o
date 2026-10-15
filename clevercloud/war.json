@@ -1,0 +1,12 @@
+{
+  "deploy": {
+    "container": "TOMCAT9",
+    "war": [
+      {
+        "file": "target/ejercicios-jstl.war",
+        "context": "/",
+        "checkMe": "/index.jsp"
+      }
+    ]
+  }
+}
